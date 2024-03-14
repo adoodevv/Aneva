@@ -23,12 +23,12 @@ const FileList: React.FC = () => {
    }, []);
 
    return (
-      <div className="">
-         <h2 className="">Uploaded Files</h2>
-         <ul className="">
+      <div className="mx-auto p-4 items-center justify-center">
+         <h2 className="text-2xl font-bold mb-4">Uploaded Files</h2>
+         <ul className="list-disc list-inside">
             {files.map((file) => (
-               <li key={file.id} className="">
-                  <span className="">{file.name}</span>
+               <li key={file.id} className="py-2">
+                  <span className="text-gray-700 font-medium">{file.name}</span>
                </li>
             ))}
          </ul>

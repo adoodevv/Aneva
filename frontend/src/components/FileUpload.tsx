@@ -32,16 +32,16 @@ const FileUpload: React.FC = () => {
 
    return (
       <div>
-         <h2>Upload A File</h2>
-         <div className="">
+         <h2 className="text-2xl font-bold mb-4 text-center">Upload A File</h2>
+         <div className="container mx-auto p-4 flex items-center justify-center gap-4">
             <input
                type="file"
                onChange={onChangeHandler}
-               className=""
+               className="bg-white border border-gray-300 rounded py-2 px-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <button
                onClick={onSubmitHandler}
-               className=""
+               className="bg-blue-500 text-white py-3 px-5 rounded hover:bg-blue-700"
             >
                Upload
             </button>
