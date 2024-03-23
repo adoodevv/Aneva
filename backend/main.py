@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .api.endpoints import files
+from api.endpoints import files
 
 app = FastAPI()
 

@@ -1,5 +1,5 @@
 from fastapi import APIRouter, UploadFile, File
-from ...db.database import get_db
+from db.database import get_db
 import sqlite3
 
 router = APIRouter()
